@@ -1,0 +1,19 @@
+This MATLAB code calculates and plots the voltage vs. resistance curves for three different electrode materials (stainless steel, titanium paper, and nickel foam) in an alkaline electrolysis system. Here's an explanation of the code:
+
+Electrode area and thickness: The code defines the electrode areas (A_ss, A_ti, A_nf) in cm^2 and the electrode thicknesses (t_ss, t_ti, t_nf) in cm for each electrode material.
+
+Electrolyte properties: The code specifies the concentration of KOH (KOH_conc) in wt.% and the density of KOH electrolyte (rho_KOH) in g/cm^3.
+
+Electrode properties: The code provides the densities of the electrode materials (rho_ss, rho_ti, rho_nf) in g/cm^3.
+
+Resistance range: The code defines the minimum (R_min) and maximum (R_max) resistances in Ohm and the step size (delta_R) for generating a range of resistances (R).
+
+Calculate the current density: Using the resistances, the code calculates the current density (j_ss, j_ti, j_nf) for each electrode material. The current density is determined using specific equations based on the resistances and electrode properties. The equations are derived by solving a quadratic equation.
+
+Calculate the voltage: The code calculates the voltage (V_ss, V_ti, V_nf) for each electrode material using the calculated current density and the voltage equation used in the previous code.
+
+Plotting: The code plots the voltage vs. resistance curves for each electrode material using the plot function. The curves are represented by red (V_ss), blue (V_ti), and green (V_nf) lines. The x-axis represents the resistance values, and the y-axis represents the voltage values. The plot includes axis labels, a legend, and a title.
+
+Grid: The code adds a grid to the plot using the grid on statement.
+
+The resulting plot shows the relationship between voltage and resistance for each electrode material in an alkaline electrolysis system. It provides insights into the behavior of the electrolysis system at different resistance levels using different electrode materials.
